@@ -63,14 +63,24 @@ class SliceImage: NSObject {
         var images = [UIImage]()
         let quadrantSize: CGSize = CGSize(width: CGFloat(Int(originalImage.size.width) / matrix.rows), height: CGFloat(Int(originalImage.size.height) / matrix.cols))
         
-        for rowPosition in 0 ..< matrix.rows {
-            for colPosition in 0 ..< matrix.cols {
+//        for rowPosition in 0 ..< matrix.rows {
+//            for colPosition in 0 ..< matrix.cols {
+//                let x: CGFloat = CGFloat(rowPosition * Int(quadrantSize.width))
+//                let y: CGFloat = CGFloat(colPosition * Int(quadrantSize.height))
+//                let rect = CGRect(x: x, y: y, width: quadrantSize.width, height: quadrantSize.height)
+//                images.append(self.crop(image: originalImage, cropRect: rect))
+//            }
+//        }
+        
+        for colPosition in 0 ..< matrix.cols {
+            for rowPosition in 0 ..< matrix.rows {
                 let x: CGFloat = CGFloat(rowPosition * Int(quadrantSize.width))
                 let y: CGFloat = CGFloat(colPosition * Int(quadrantSize.height))
                 let rect = CGRect(x: x, y: y, width: quadrantSize.width, height: quadrantSize.height)
                 images.append(self.crop(image: originalImage, cropRect: rect))
             }
         }
+        
         return images
     }
     

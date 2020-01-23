@@ -11,4 +11,6 @@ import UIKit
 class ImageCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imageViewSlice: UIImageView!
+    
+    @IBOutlet weak var imageCount: UIButton!
 }

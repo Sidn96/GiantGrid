@@ -65,7 +65,7 @@
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WhK-hx-MCY">
                                         <rect key="frame" x="8" y="8" width="272" height="536"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WXL-Yw-ILv">
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="2" minimumInteritemSpacing="2" id="WXL-Yw-ILv">
                                             <size key="itemSize" width="123" height="122"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -82,17 +82,35 @@
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RCU-0d-Y1A">
                                                             <rect key="frame" x="0.0" y="0.0" width="123" height="122"/>
                                                         </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R23-rH-4Kh">
+                                                            <rect key="frame" x="31.5" y="31" width="60" height="60"/>
+                                                            <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <accessibility key="accessibilityConfiguration">
+                                                                <accessibilityTraits key="traits" image="YES"/>
+                                                            </accessibility>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="60" id="Mmm-xL-v1c"/>
+                                                                <constraint firstAttribute="height" constant="60" id="ZbN-0s-fwS"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <state key="normal" title="0">
+                                                                <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.99636119599999995" green="0.87753933669999995" blue="0.5383108258" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="RCU-0d-Y1A" firstAttribute="top" secondItem="Qvh-HA-Nsp" secondAttribute="top" id="6fi-ae-yCX"/>
                                                         <constraint firstAttribute="trailing" secondItem="RCU-0d-Y1A" secondAttribute="trailing" id="YsT-AD-APY"/>
                                                         <constraint firstAttribute="bottom" secondItem="RCU-0d-Y1A" secondAttribute="bottom" id="b2C-BA-Myi"/>
+                                                        <constraint firstItem="R23-rH-4Kh" firstAttribute="centerX" secondItem="Qvh-HA-Nsp" secondAttribute="centerX" id="b7Q-pM-35A"/>
+                                                        <constraint firstItem="R23-rH-4Kh" firstAttribute="centerY" secondItem="Qvh-HA-Nsp" secondAttribute="centerY" id="geM-ar-RME"/>
                                                         <constraint firstItem="RCU-0d-Y1A" firstAttribute="leading" secondItem="Qvh-HA-Nsp" secondAttribute="leading" id="jca-4D-NH2"/>
                                                     </constraints>
                                                 </collectionViewCellContentView>
                                                 <size key="customSize" width="123" height="122"/>
                                                 <connections>
+                                                    <outlet property="imageCount" destination="R23-rH-4Kh" id="df5-bJ-3yJ"/>
                                                     <outlet property="imageViewSlice" destination="RCU-0d-Y1A" id="HVU-cx-p9h"/>
                                                 </connections>
                                             </collectionViewCell>

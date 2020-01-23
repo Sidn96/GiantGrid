@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C03494E923D9691300E2B049 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03494E823D9691300E2B049 /* ImageCollectionViewCell.swift */; };
 		C03494EB23D969E000E2B049 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03494EA23D969E000E2B049 /* ImageCollectionViewController.swift */; };
+		C03494EF23D9D12A00E2B049 /* CollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03494EE23D9D12A00E2B049 /* CollectionFlowLayout.swift */; };
 		C0E8112523D84F1B00F3BAB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E8112423D84F1B00F3BAB0 /* AppDelegate.swift */; };
 		C0E8112723D84F1B00F3BAB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E8112623D84F1B00F3BAB0 /* SceneDelegate.swift */; };
 		C0E8112923D84F1B00F3BAB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E8112823D84F1B00F3BAB0 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		C03494E823D9691300E2B049 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		C03494EA23D969E000E2B049 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		C03494EE23D9D12A00E2B049 /* CollectionFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFlowLayout.swift; sourceTree = "<group>"; };
 		C0E8112123D84F1B00F3BAB0 /* GiantGridDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiantGridDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E8112423D84F1B00F3BAB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0E8112623D84F1B00F3BAB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				C0E8113A23D878BF00F3BAB0 /* CutImage.swift */,
 				C03494E823D9691300E2B049 /* ImageCollectionViewCell.swift */,
 				C03494EA23D969E000E2B049 /* ImageCollectionViewController.swift */,
+				C03494EE23D9D12A00E2B049 /* CollectionFlowLayout.swift */,
 			);
 			path = GiantGridDemo;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				C0E8112523D84F1B00F3BAB0 /* AppDelegate.swift in Sources */,
 				C0E8113923D8657B00F3BAB0 /* GridView.swift in Sources */,
 				C0E8112723D84F1B00F3BAB0 /* SceneDelegate.swift in Sources */,
+				C03494EF23D9D12A00E2B049 /* CollectionFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
